@@ -1,0 +1,35 @@
+{
+  "name": "dsh-message-outline",
+  "version": "0.1.1",
+  "private": false,
+  "description": "DSH web 前端插件：当前会话消息大纲（左缘横杠）——我的消息一列细横杠，hover 展开完整大纲，点击瞬间定位对话消息。纯前端、零 3081 依赖、sessions 快照订阅驱动零轮询。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "sessions"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chongfengdy-dev/dsh-message-outline.git"
+  },
+  "homepage": "https://github.com/chongfengdy-dev/dsh-message-outline",
+  "bugs": {
+    "url": "https://github.com/chongfengdy-dev/dsh-message-outline/issues"
+  }
+}

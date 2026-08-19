@@ -1,0 +1,5 @@
+# dsh-message-outline：注册为 cordis loader entry（纯前端插件，服务端无逻辑）。
+- insert:
+    - id: message-outline
+      name: dsh-message-outline
+      config: {}

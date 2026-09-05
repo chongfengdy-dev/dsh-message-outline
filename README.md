@@ -27,6 +27,9 @@ sudo systemctl restart dsh-web   # 或重启 dsh web 进程
 - 数据源：当前会话的 sessions 快照（`chat.order`/`chat.nodes` + 官方 `data-chat-anchor-key` 锚点定位），全部历史可跳转（`loadOlder` 懒加载）
 - 从 dsh-term-panels 拆出独立发布（大纲功能，不含终端面板/Token HUD——那些需要 3081 服务，见 dsh-term-panels）
 
+## 特别说明
+- dsh增加了大纲功能，本插件不再更新。如有需要可以让你的ai分析插件自己适配新版dsh。
+
 ## License
 
 MIT
